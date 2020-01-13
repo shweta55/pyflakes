@@ -26,5 +26,7 @@ matrix:
     - arch: arm64
       python: nightly
       dist: bionic
-install: pip install tox
+install: 
+- lscpu
+- pip install tox
 script: tox -e py
